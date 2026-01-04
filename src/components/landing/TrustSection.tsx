@@ -47,31 +47,31 @@ const TrustSection = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Left - Content */}
-          <div className="grid grid-cols-2 gap-4 animate-slide-up">
+          <div className="grid grid-cols-2 gap-4 animate-slide-up h-full">
             {trustPoints.map((point, index) => (
               <div 
                 key={index}
-                className="p-6 rounded-2xl glass-card border border-border hover:border-primary/30 transition-all duration-300 hover-lift"
+                className="p-6 rounded-2xl glass-card border border-border hover:border-primary/30 transition-all duration-300 hover-lift flex flex-col"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-4">
                   <point.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{point.title}</h3>
-                <p className="text-muted-foreground text-sm">{point.description}</p>
+                <p className="text-muted-foreground text-sm flex-1">{point.description}</p>
               </div>
             ))}
           </div>
           
           {/* Right - Image */}
-          <div className="relative animate-slide-up animate-delay-200">
+          <div className="relative animate-slide-up animate-delay-200 flex items-center">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl" />
-            <div className="relative overflow-hidden rounded-2xl border border-border shadow-xl">
+            <div className="relative overflow-hidden rounded-2xl border border-border shadow-xl w-full h-full min-h-[320px]">
               <img 
                 src={trustAccuracy} 
-                alt="Quality assurance professional reviewing verified data" 
-                className="w-full h-auto"
+                alt="Professional team reviewing quality assurance dashboards and document verification" 
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
