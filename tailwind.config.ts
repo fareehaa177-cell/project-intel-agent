@@ -51,11 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        neon: {
-          cyan: "hsl(var(--neon-cyan))",
-          blue: "hsl(var(--neon-blue))",
-          purple: "hsl(var(--neon-purple))",
-          pink: "hsl(var(--neon-pink))",
+        soft: {
+          blue: "hsl(var(--soft-blue))",
+          cyan: "hsl(var(--soft-cyan))",
+          teal: "hsl(var(--soft-teal))",
+          sky: "hsl(var(--soft-sky))",
         },
       },
       borderRadius: {
@@ -76,16 +76,16 @@ export default {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
-        glow: {
-          "0%, 100%": { opacity: "0.5" },
-          "50%": { opacity: "1" },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         shimmer: "shimmer 3s linear infinite",
-        glow: "glow 2s ease-in-out infinite",
+        "fade-in": "fadeIn 0.5s ease-out",
       },
     },
   },

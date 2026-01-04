@@ -1,5 +1,5 @@
 import { Network, Layers, Building2 } from "lucide-react";
-import integrationsNetwork from "@/assets/integrations-network.png";
+import integrationsTeam from "@/assets/integrations-team.png";
 
 const integrationPoints = [
   {
@@ -23,18 +23,18 @@ const IntegrationsSection = () => {
   return (
     <section className="relative py-32 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-background" />
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-accent/5 blur-[150px]" />
+      <div className="absolute inset-0 bg-muted/30" />
+      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-accent/3 blur-[150px]" />
       
       <div className="container relative z-10 mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Image */}
           <div className="relative animate-slide-up order-2 lg:order-1">
-            <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 to-neon-purple/20 rounded-3xl blur-3xl" />
-            <div className="relative overflow-hidden rounded-2xl border border-accent/20">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl" />
+            <div className="relative overflow-hidden rounded-2xl border border-border shadow-xl">
               <img 
-                src={integrationsNetwork} 
-                alt="AI integration network" 
+                src={integrationsTeam} 
+                alt="Team collaborating with integrated enterprise systems" 
                 className="w-full h-auto"
               />
             </div>
@@ -55,11 +55,11 @@ const IntegrationsSection = () => {
               {integrationPoints.map((point, index) => (
                 <div 
                   key={index}
-                  className="group p-5 rounded-xl glass-card border border-border/50 hover:border-accent/30 transition-all duration-300"
+                  className="group p-5 rounded-xl glass-card border border-border hover:border-primary/30 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 border border-accent/30 flex items-center justify-center">
-                      <point.icon className="w-6 h-6 text-accent" />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <point.icon className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-foreground mb-1">{point.title}</h3>

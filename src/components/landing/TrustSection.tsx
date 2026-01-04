@@ -1,5 +1,5 @@
 import { Shield, CheckCircle, Lock, Scale } from "lucide-react";
-import securityTrust from "@/assets/security-trust.png";
+import trustAccuracy from "@/assets/trust-accuracy.png";
 
 const trustPoints = [
   {
@@ -29,11 +29,11 @@ const TrustSection = () => {
     <section className="relative py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-background" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       
       <div className="container relative z-10 mx-auto px-6">
         <div className="text-center mb-16 animate-slide-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card-neon text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card-accent text-sm font-medium mb-6">
             <Shield className="w-4 h-4 text-primary" />
             <span className="text-primary">Enterprise Security</span>
           </div>
@@ -53,7 +53,7 @@ const TrustSection = () => {
             {trustPoints.map((point, index) => (
               <div 
                 key={index}
-                className="p-6 rounded-2xl glass-card border border-border/50 hover:border-primary/30 transition-all duration-300"
+                className="p-6 rounded-2xl glass-card border border-border hover:border-primary/30 transition-all duration-300 hover-lift"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-4">
                   <point.icon className="w-6 h-6 text-primary" />
@@ -66,11 +66,11 @@ const TrustSection = () => {
           
           {/* Right - Image */}
           <div className="relative animate-slide-up animate-delay-200">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-neon-pink/20 rounded-3xl blur-3xl" />
-            <div className="relative overflow-hidden rounded-2xl border border-primary/20">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl" />
+            <div className="relative overflow-hidden rounded-2xl border border-border shadow-xl">
               <img 
-                src={securityTrust} 
-                alt="Enterprise security" 
+                src={trustAccuracy} 
+                alt="Quality assurance professional reviewing verified data" 
                 className="w-full h-auto"
               />
             </div>

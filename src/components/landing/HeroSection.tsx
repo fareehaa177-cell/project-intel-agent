@@ -1,20 +1,20 @@
-import heroRobot from "@/assets/hero-robot.png";
+import heroTeam from "@/assets/hero-team.png";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-background" />
-      <div className="absolute inset-0 bg-grid-pattern opacity-30" />
-      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-neon-cyan/5 blur-[120px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-neon-purple/5 blur-[100px]" />
+      <div className="absolute inset-0 bg-dots-pattern opacity-40" />
+      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-accent/5 blur-[100px]" />
       
       {/* Auth buttons - top right */}
       <div className="absolute top-6 right-6 z-50 flex gap-4">
-        <button className="px-6 py-2.5 rounded-lg border border-border bg-secondary/50 backdrop-blur-sm text-foreground font-medium hover:bg-secondary/80 hover:border-primary/30 transition-all duration-300">
+        <button className="px-6 py-2.5 rounded-lg border border-border bg-card/80 backdrop-blur-sm text-foreground font-medium hover:bg-muted hover:border-primary/30 transition-all duration-300">
           Sign In
         </button>
-        <button className="px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all duration-300 pulse-glow">
+        <button className="px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all duration-300 pulse-soft">
           Sign Up
         </button>
       </div>
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left content */}
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card-neon text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card-accent text-sm font-medium">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-primary">AI-Powered Document Intelligence</span>
             </div>
@@ -40,12 +40,12 @@ const HeroSection = () => {
           
           {/* Right visual */}
           <div className="relative animate-slide-up animate-delay-200">
-            <div className="relative floating-animation">
-              <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 to-neon-purple/20 rounded-3xl blur-3xl" />
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl blur-2xl" />
               <img 
-                src={heroRobot} 
-                alt="AI Document Intelligence Robot" 
-                className="relative w-full h-auto rounded-2xl"
+                src={heroTeam} 
+                alt="Engineers reviewing construction documents with AI assistance" 
+                className="relative w-full h-auto rounded-2xl shadow-xl border border-border/50"
               />
             </div>
           </div>
