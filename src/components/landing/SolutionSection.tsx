@@ -1,5 +1,5 @@
 import { Sparkles, Eye, Zap, Brain } from "lucide-react";
-import solutionTeam from "@/assets/solution-team.png";
+import solutionTeam from "@/assets/360_F_748550229_X3TvCN9dlroJxbZA3Y1oTXMjwTs9p0sf.jpg";
 
 const features = [
   {
